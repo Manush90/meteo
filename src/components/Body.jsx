@@ -26,13 +26,13 @@ function translateWeatherDescription(description) {
     case "clear sky":
       return "cielo sereno";
     case "few clouds":
-      return "pochi nuvoloso";
+      return "poco nuvoloso";
     case "scattered clouds":
       return "nuvole sparse";
     case "broken clouds":
       return "nuvoloso";
     case "shower rain":
-      return "pioggia a singhiozzo";
+      return "pioggierella";
     case "rain":
       return "pioggia";
     case "thunderstorm":
