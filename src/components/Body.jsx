@@ -78,7 +78,7 @@ function Body() {
 
   return (
     <Container
-      className="mt-4 d-flex flex-column text-center"
+      className="mt-2 d-flex flex-column text-center"
       style={{
         backgroundImage: "",
       }}
@@ -105,7 +105,7 @@ function Body() {
                 className="text-center"
               />
             </Form.Group>
-            <Button variant="primary" className="mt-2" onClick={handleSearch}>
+            <Button variant="primary" className="mt-3" onClick={handleSearch}>
               Cerca
             </Button>
           </Form>
