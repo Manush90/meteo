@@ -7,15 +7,15 @@ function CityCards() {
 
   useEffect(() => {
     loadCityData();
-  });
+  }, []);
 
   const loadCityData = async () => {
-    const cities = ["Roma, IT", "Firenze,", "Napoli"];
+    const cities = ["Roma", "Firenze", "Napoli"];
     const cityWeatherData = [];
     for (const city of cities) {
       try {
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f217670adb3258e400608474ed0cec4`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6484ca0de4e91a5d0dd82a56d1b2a24e`
         );
         if (!response.ok) {
           throw new Error(`Errore durante il recupero dei dati per ${city}`);
@@ -74,7 +74,7 @@ function CityCards() {
 
   return (
     <Container className="mt-4 text-center">
-      <h2>Città Principali</h2>
+      <h2>Città Italiane</h2>
       <div className="row">
         {cityData.map((city, index) => (
           <div key={index} className=" col-md-4 mb-4">

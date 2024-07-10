@@ -26,13 +26,13 @@ function translateWeatherDescription(description) {
     case "clear sky":
       return "cielo sereno";
     case "few clouds":
-      return "poco nuvoloso";
+      return "pochi nuvoloso";
     case "scattered clouds":
       return "nuvole sparse";
     case "broken clouds":
       return "nuvoloso";
     case "shower rain":
-      return "pioggierella";
+      return "pioggia a singhiozzo";
     case "rain":
       return "pioggia";
     case "thunderstorm":
@@ -50,10 +50,13 @@ function Body() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
+
+  const cities = ["Roma", "Milano", "Napoli", "Firenze", "Lecce", "Cagliari"];
+
   const fetchWeatherData = async () => {
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6f217670adb3258e400608474ed0cec4`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=6484ca0de4e91a5d0dd82a56d1b2a24e`
       );
       if (!response.ok) {
         throw new Error("Città non trovata. Si prega di riprovare.");
@@ -75,7 +78,7 @@ function Body() {
 
   return (
     <Container
-      className="mt-2 d-flex flex-column text-center"
+      className="mt-4 d-flex flex-column text-center"
       style={{
         backgroundImage: "",
       }}
@@ -102,7 +105,7 @@ function Body() {
                 className="text-center"
               />
             </Form.Group>
-            <Button variant="primary" className="mt-3" onClick={handleSearch}>
+            <Button variant="primary" className="mt-2" onClick={handleSearch}>
               Cerca
             </Button>
           </Form>
@@ -112,7 +115,7 @@ function Body() {
           {weatherData && (
             <>
               <div className="d-flex ">
-                <Card className="d-flex justify-content-center heightCard col-md-6 mb-4 ">
+                <Card className="heightCard d-flex justify-content-center col-md-6 mb-4 ">
                   <Card.Img
                     className="imgCard"
                     variant="top"
@@ -131,7 +134,7 @@ function Body() {
                 <div className="d-flex justify-content-center ">
                   <Card className="heightCard">
                     <Card.Img
-                      className="imgCard"
+                      className="imgCard "
                       variant="top"
                       src="https://img.freepik.com/free-psd/3d-icon-weather-conditions-with-rain-sun_23-2150108737.jpg?size=338&ext=jpg&ga=GA1.1.2082370165.1710460800&semt=ais"
                     />
