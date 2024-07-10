@@ -10,7 +10,7 @@ function CityCards() {
   }, []);
 
   const loadCityData = async () => {
-    const cities = ["Roma", "Firenze", "Napoli"];
+    const cities = ["Roma, IT", "Firenze,", "Napoli"];
     const cityWeatherData = [];
     for (const city of cities) {
       try {
@@ -74,7 +74,7 @@ function CityCards() {
 
   return (
     <Container className="mt-4 text-center">
-      <h2>Città Italiane</h2>
+      <h2>Città Principali</h2>
       <div className="row">
         {cityData.map((city, index) => (
           <div key={index} className=" col-md-4 mb-4">
