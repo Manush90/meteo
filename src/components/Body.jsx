@@ -115,8 +115,9 @@ function Body() {
           {weatherData && (
             <>
               <div className="d-flex ">
-                <Card className="d-flex justify-content-center col-md-6 mb-4 ">
+                <Card className="d-flex justify-content-center heightCard col-md-6 mb-4 ">
                   <Card.Img
+                    className="imgCard"
                     variant="top"
                     src="https://nationalstorage.com.au/wp-content/uploads/2019/10/Brisbane-411x274-c-default.jpg"
                   />
@@ -131,8 +132,9 @@ function Body() {
                   </Card.Body>
                 </Card>
                 <div className="d-flex justify-content-center ">
-                  <Card>
+                  <Card className="heightCard">
                     <Card.Img
+                      className="imgCard"
                       variant="top"
                       src="https://img.freepik.com/free-psd/3d-icon-weather-conditions-with-rain-sun_23-2150108737.jpg?size=338&ext=jpg&ga=GA1.1.2082370165.1710460800&semt=ais"
                     />

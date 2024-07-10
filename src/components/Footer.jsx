@@ -1,20 +1,20 @@
 const Footer = function () {
   return (
-    <footer class="bg-dark mt-4" data-bs-theme="dark">
-      <div class="row justify-content-center w-100">
-        <div class="col col-6">
-          <div class="row">
-            <div class="col mb-2">
-              <i class="bi bi-facebook footer-icon me-2"></i>
-              <i class="bi bi-instagram footer-icon me-2"></i>
-              <i class="bi bi-twitter-x footer-icon me-2"></i>
-              <i class="bi bi-youtube footer-icon"></i>
+    <footer className="bg-dark mt-4" data-bs-theme="dark">
+      <div className="row justify-content-center w-100">
+        <div className="col col-6">
+          <div className="row">
+            <div className="col mb-2">
+              <i className="bi bi-facebook footer-icon me-2"></i>
+              <i className="bi bi-instagram footer-icon me-2"></i>
+              <i className="bi bi-twitter-x footer-icon me-2"></i>
+              <i className="bi bi-youtube footer-icon"></i>
             </div>
           </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg 4">
-            <div class="col">
-              <div class="row">
-                <div class="col footer-links">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg 4">
+            <div className="col">
+              <div className="row">
+                <div className="col footer-links">
                   <p>
                     <a href="#link" alt="footer link">
                       Privacy
@@ -28,9 +28,9 @@ const Footer = function () {
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="row">
-                <div class="col footer-links">
+            <div className="col">
+              <div className="row">
+                <div className="col footer-links">
                   <p>
                     <a href="#link" alt="footer link">
                       Previsioni
@@ -45,9 +45,9 @@ const Footer = function () {
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="row">
-                <div class="col footer-links">
+            <div className="col">
+              <div className="row">
+                <div className="col footer-links">
                   <p>
                     <a href="#link" alt="footer link">
                       Help Center
@@ -62,9 +62,9 @@ const Footer = function () {
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="row">
-                <div class="col footer-links">
+            <div className="col">
+              <div className="row">
+                <div className="col footer-links">
                   <p>
                     <a href="#link" alt="footer link">
                       Gift Cards
@@ -79,15 +79,15 @@ const Footer = function () {
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col mb-2 text-center">
-              <button type="button" class="btn btn-sm bg-primary  footer-button rounded-0 mt-3">
+          <div className="row">
+            <div className="col mb-2 text-center">
+              <button type="button" className="btn btn-sm bg-primary  footer-button rounded-0 mt-3">
                 Lavora con Noi
               </button>
             </div>
           </div>
           <div class="row">
-            <div class=" text-white text-center col mb-2 mt-2 copyright">
+            <div className=" text-white text-center col mb-2 mt-2 copyright">
               © 2023-2024 ManuMeteo.it
             </div>
           </div>

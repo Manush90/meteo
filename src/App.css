@@ -8,3 +8,10 @@ body {
   background-image: url(https://images5.alphacoders.com/132/1327980.png);
   color: white;
 }
+
+.heightCard {
+  height: 400px !important;
+}
+.imgCard {
+  height: 200px !important;
+}
