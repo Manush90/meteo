@@ -7,7 +7,7 @@ function CityCards() {
 
   useEffect(() => {
     loadCityData();
-  }, []);
+  });
 
   const loadCityData = async () => {
     const cities = ["Roma", "Firenze", "Napoli"];

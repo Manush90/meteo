@@ -51,8 +51,6 @@ function Body() {
   const [weatherData, setWeatherData] = useState(null);
   const [error, setError] = useState(null);
 
-  const cities = ["Roma", "Milano", "Napoli", "Firenze", "Lecce", "Cagliari"];
-
   const fetchWeatherData = async () => {
     try {
       const response = await fetch(
